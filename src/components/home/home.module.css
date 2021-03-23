@@ -1,0 +1,146 @@
+.home{
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../common/images/bg4.png");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  animation: ease_in_home 1s 1;
+}
+
+@keyframes ease_in_home {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.title {
+  width: 70%;
+  font-size: 3.2em;
+  margin: 0;
+  margin-bottom: 10vh;
+  padding-left: 5%;
+  padding-top: 5%;
+  text-shadow: 3px 3px black;
+  animation: ease_in_title 1s 1;
+  /* animation-duration: 1s;
+  animation-iteration-count: 1; */
+  /* animation-delay: 1s; */
+  user-select: none;
+}
+
+@keyframes ease_in_title {
+  0% {
+    padding-top: 0;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0.8;
+  }
+  100% {
+    padding-top: 5%;
+    opacity: 1;
+  }
+}
+
+.audio_wrapper {
+  position: absolute;
+  top: 0;
+  right: 5%;
+  padding-top: 5%;
+  animation: ease_in_audio;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  opacity: 0;
+}
+
+.audio {
+  width: 120px;
+  box-shadow: 2px 3px black;
+  border-radius: 27px;
+}
+
+.audio:focus {
+  outline: none;
+}
+
+.audio::-webkit-media-controls-panel {
+  background-color: none;
+}
+
+.audio::-webkit-media-controls-timeline,
+.audio::-webkit-media-controls-current-time-display,
+.audio::-webkit-media-controls-time-remaining-display,
+.audio::-webkit-media-controls-toggle-closed-captions-button {
+  display: none;
+}
+
+@keyframes ease_in_audio {
+  0% {
+    top: -100px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0.8;
+  }
+  100% {
+    display: block;
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.section_wrapper {
+  width: 100%;
+  height: 65vh;
+  opacity: 0;
+  background-color: rgba( 0, 0, 0, 0.5 );
+  animation: ease_in_section;
+  animation-duration: 0.5s;
+  animation-delay: 1.7s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes ease_in_section {
+  0% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    opacity: 1;
+    display: block;
+    transform: translateX(0);
+  }
+}
+
+.section {
+  width: 100%;
+  height: 100%;
+}
+
+.rail {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  opacity: 0;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  animation: ease_in_section;
+  animation-duration: 0.5s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
