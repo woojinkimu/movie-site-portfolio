@@ -1,0 +1,49 @@
+@value myTextWhite, myTextBlack from '/src/common/style/colors.css';
+
+.form {
+  background-color: myTextWhite;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  color: myTextBlack;
+}
+
+.form > .form_top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 3vh;
+}
+
+.form > .form_top img {
+  width: 35px;
+}
+
+.form > .form_top img:hover {
+  cursor: pointer;
+}
+
+.form > .form_top label {
+  flex: 1 1 50%;
+  padding-right: 2em;
+  text-align: right;
+}
+
+.form > .form_top input {
+  height: 2em;
+  padding: 0 1em;
+}
+
+.form > label {
+  margin-bottom: 1vh;
+}
+
+.form > .form_bottom {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.form > .form_bottom textarea {
+  padding: 1em;
+}

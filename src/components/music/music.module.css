@@ -1,0 +1,96 @@
+.div {
+  padding-bottom: 5vh;
+  background-color: #272727;
+}
+
+.img_div {
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.img_div > h1 {
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: .05em solid #fff;
+  font-size: 3em;
+}
+
+.img_div > .img_text1 {
+  width: 16.5ch;
+  animation: typing1 .8s steps(21), cursor1 1s steps(21) infinite;
+  animation-fill-mode: forwards;
+  position: absolute;
+  right: 6vw;
+  top: 18vh;
+}
+
+.img_div > .img_text2 {
+  width: 24.7ch;
+  opacity: 1;
+  animation: typing2 1s steps(31), cursor2 1s steps(31) infinite;
+  animation-fill-mode: backwards;
+  animation-delay: .8s;
+  position: absolute;
+  right: 6vw;
+  top: 25vh;
+}
+
+@keyframes typing1 {
+  from{ width: 0; }
+  to{border: none;}
+}
+@keyframes cursor1 {
+  50%{ border-color: transparent; }
+}
+
+@keyframes typing2 {
+  from{ width: 0; opacity: 1;}
+  to{opacity: 1;}
+}
+@keyframes cursor2 {
+  50%{ border-color: transparent; }
+}
+
+.menu {
+  display: flex;
+  background-color: slategray;
+}
+
+.menu a {
+  display: contents;
+}
+
+.menu a > div {
+  padding: 3vh 0;
+  font-size: 2em;
+  text-shadow: 3px 2px black;
+}
+
+.menu a > div, .menu a > div:hover {
+  animation: none;
+}
+
+.section {
+  padding: 5vh 5vw;
+}
+
+.article {
+  display: flex;
+  justify-content: center;
+}
+
+.article div {
+  margin-right: 10vw;
+}
+
+.article picture img {
+  width: 20vw;
+}
+
+.h1 {
+  margin-top: 10vh;
+}

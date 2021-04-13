@@ -4,7 +4,9 @@ import styles from './error_page.module.css';
 const ErrorPage = (props) => {
 
   return(
-    <div className={styles.bg} style={{width: "100vw", height: "100vh", backgroundImage: "url(images/404error.jpg)", backgroundSize: "cover"}}>
+    <div className={styles.error_page}>
+      <div className={styles.bg_cover} style={{width: "100vw", height: "100vh", backgroundImage: "url(images/404error.jpg)", backgroundSize: "cover"}}></div>
+      <div className={styles.bg} style={{width: "100vw", height: "100vh", backgroundImage: "url(images/404error.jpg)", backgroundSize: "cover"}}></div>
       <div className={styles.info_text}>
         <h1 className={styles.text1}>404</h1>
         <h1 className={styles.text2}>Page Not Found.</h1>
@@ -12,6 +14,14 @@ const ErrorPage = (props) => {
       </div>
       <img className={styles.img} src="images/indu.png" alt=""/>
     </div>
+    // <div className={styles.bg} style={{width: "100vw", height: "100vh", backgroundImage: "url(images/404error.jpg)", backgroundSize: "cover"}}>
+    //   <div className={styles.info_text}>
+    //     <h1 className={styles.text1}>404</h1>
+    //     <h1 className={styles.text2}>Page Not Found.</h1>
+    //     <h1 className={styles.text3}>Sorry, that page can't be found.</h1>
+    //   </div>
+    //   <img className={styles.img} src="images/indu.png" alt=""/>
+    // </div>
   )
 };
 

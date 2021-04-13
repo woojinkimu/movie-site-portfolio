@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './video_detail.module.css';
 
-const VideoDetail = ({src, width, height, title}) => {
+const VideoDetail = ({src, title}) => {
 
   return(
     <section className={styles.detail}>

@@ -20,7 +20,10 @@ const Story = memo((props) => {
       <section className={styles.section}>
         <article className={styles.article_story}>
           <p>
-            “우린 답을 찾을 거야, 늘 그랬듯이”<br/><br/>
+            “우린 답을 찾을 거야, 늘 그랬듯이”
+          </p>
+          <img src="images/story1.jpg" alt="interstellar poster"/>
+          <p>
             세계 각국의 정부와 경제가 완전히 붕괴된 미래가 다가온다.
             지난 20세기에 범한 잘못이 전 세계적인 식량 부족을 불러왔고, NASA도 해체되었다.
             이때 시공간에 불가사의한 틈이 열리고, 남은 자들에게는 이 곳을 탐험해 인류를 구해야 하는 임무가 지워진다.
@@ -29,7 +32,7 @@ const Story = memo((props) => {
           </p>
         </article>
         <article className={styles.article_video}>
-          <VideoDetail src="https://www.youtube.com/embed/vABfjuXZhYY" width="1280" height="720" title="YouTube video player" />
+          <VideoDetail src="https://www.youtube.com/embed/vABfjuXZhYY" title="YouTube video player" />
         </article>
         <article className={styles.article_explain}>
           <p>

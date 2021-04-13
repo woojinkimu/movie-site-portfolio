@@ -56,16 +56,16 @@ class App extends Component {
               <Story cardsData={this.state.cardsData} />
             </Route>
             <Route path="/actors">
-              <Actors />
+              <Actors cardsData={this.state.cardsData} />
             </Route>
             <Route path="/etc">
-              <ETC />
+              <ETC cardsData={this.state.cardsData} />
             </Route>
             <Route path="/music">
-              <Music />
+              <Music cardsData={this.state.cardsData} />
             </Route>
             <Route path="/board">
-              <Board />
+              <Board cardsData={this.state.cardsData} />
             </Route>
             <Route>
               <ErrorPage />
